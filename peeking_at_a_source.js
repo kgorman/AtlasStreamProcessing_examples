@@ -15,4 +15,4 @@ source = {$source:
 processor = [s]
 
 // let's take a peek at that stream
-sp.process(s)
+sp.process(processor)
