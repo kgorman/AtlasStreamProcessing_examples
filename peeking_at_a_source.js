@@ -7,7 +7,8 @@ source = {$source:
    {
       "connectionName":"myAtlasSource", 
       "db": "test", 
-      "coll": "myTest"
+      "coll": "myTest",
+      timeField : { $dateFromString : { "dateString" : "$fullDocument.timestamp"} }
    }
 }
 
